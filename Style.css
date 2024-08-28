@@ -1,0 +1,181 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3d0909;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  background-image: url(./Images/heladoBackground.jpg);
+  background-position-x: -190%;
+  background-position-y: 60%;
+  background-repeat: repeat-x;
+  background-size: auto;
+}
+
+header {
+  background-color: #273546;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+header p {
+  margin: 0;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #273546;
+  font-family: fantasy;
+}
+
+p {
+  margin: 20px auto;
+  text-align: center;
+  font-size: large;
+}
+
+section {
+  margin: 20px auto;
+  text-align: center;
+  font-style: oblique;
+  font-size: 150%;
+  font-weight: normal;
+  background-color: #f0e68c;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+h2 {
+  margin: 20px auto;
+  text-align: center;
+  font-family: cursive;
+  font-size: 220%;
+  font-weight: bold;
+  background-color: pink;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+a {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #273546;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
+
+  header p,
+  footer p {
+    padding: 10px 0;
+  }
+
+  .img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+.catalogo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+.content {
+  font-size: small;
+  font-family: monospace;
+  text-align: center;
+}
+
+.helado-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 45%;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.helado-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.helado-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.helado-item h3 {
+  margin-top: 10px;
+  font-size: large;
+  color: #273546;
+}
+
+@media (max-width: 768px) {
+  .catalogo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .helado-item {
+    max-width: 80%;
+  }
+}
